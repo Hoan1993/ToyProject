@@ -4,7 +4,6 @@ import java.util.Scanner;
 
 public class TimesTable {
 
-
 	
 	public void commandProcessor() {
 		System.out.println("Hello");
@@ -28,9 +27,12 @@ public class TimesTable {
 		
 		
 	}
-	
+
 	private void printTimesTable(int number) {
-		
+		int i;
+		for(i=1; i<10; i++) {
+			System.out.println(number+" X "+i+"="+(number*i));
+		}
 		
 	}
 
