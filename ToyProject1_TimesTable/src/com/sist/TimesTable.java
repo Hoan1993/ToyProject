@@ -15,11 +15,14 @@ public class TimesTable {
 			String number = kb.next();
 			if(number.equalsIgnoreCase("exit")) {
 				break;
-			} else {
-				printTimesTable(Integer.parseInt(number));
+			}else {
+				try {
+					printTimesTable(Integer.parseInt(number));
+				}catch(Exception e) {
+					System.out.println("없는 명령어 입니다.");
+				}
 			}
-			
-			
+				
 			
 		}
 		System.out.println("******구구단 프로그램 종료*******");
