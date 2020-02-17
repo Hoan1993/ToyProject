@@ -8,7 +8,7 @@ public class TimesTable {
 	
 	public void commandProcessor() {
 		
-		System.out.println("******구구단 프로그램*******");
+		System.out.println("******구구단 프로그램*******"); 
 		Scanner kb;
 		while(true) {
 			System.out.print("$ ");
