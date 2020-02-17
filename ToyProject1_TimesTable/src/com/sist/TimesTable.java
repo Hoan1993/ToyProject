@@ -7,7 +7,7 @@ public class TimesTable {
 	
 	public void commandProcessor() {
 		System.out.println("Hello");
-		System.out.println("Hello");
+		System.out.println("Hi");
 		
 		System.out.println("******구구단 프로그램*******"); 
 		Scanner kb;
