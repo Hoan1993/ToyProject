@@ -38,7 +38,7 @@ public class StudyHelper implements ToyProject2_StudyHelper {
 		if (result.equalsIgnoreCase("help")) {
 			help();
 		} else if (result.equalsIgnoreCase("tt")) {
-			System.out.print("숫자를 입력하세요 : ");
+			System.out.print("숫자를 입력하세요 :   ");
 
 			int num = sc.nextInt();
 			timesTable(num);
@@ -103,7 +103,12 @@ public class StudyHelper implements ToyProject2_StudyHelper {
 
 	@Override
 	public void sum(int num1, int num2) {
+<<<<<<< HEAD
 		System.out.println("합 : "+num1+num2);
+=======
+		
+		// TODO Auto-generated method stub
+>>>>>>> branch 'master' of https://github.com/Hoan1993/ToyProject.git
 		
 	}
 
@@ -135,7 +140,7 @@ public class StudyHelper implements ToyProject2_StudyHelper {
 	@Override
 	public void timesTable(int num) {
 		for(int x=1;x<10;x++) {
-			System.out.println(x+"Xnum="+x*num);
+			System.out.println(x+"X"+num+"="+x*num);
 		}
 		System.out.println("구구단 끝");
 		
