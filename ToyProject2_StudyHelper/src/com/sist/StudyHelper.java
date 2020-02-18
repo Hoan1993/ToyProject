@@ -44,7 +44,7 @@ public class StudyHelper implements ToyProject2_StudyHelper {
 			timesTable(num);
 
 		} else {
-			System.out.println("숫자 두 개를 입력하세요 : ");
+			System.out.println("정수 두 개를 입력하세요 : ");
 			int num1 = sc.nextInt();
 			int num2 = sc.nextInt();
 			switch (result) {
@@ -84,49 +84,53 @@ public class StudyHelper implements ToyProject2_StudyHelper {
 
 	@Override
 	public void max(int num1, int num2) {
-		// TODO Auto-generated method stub
+		System.out.println("큰 수 : "+Math.max(num1, num2));
 		
 	}
 
 	@Override
 	public void min(int num1, int num2) {
-		// TODO Auto-generated method stub
+		System.out.println("작은 수 : "+Math.min(num1, num2));
 		
 	}
 
 	@Override
 	public void sum(int num1, int num2) {
-		// TODO Auto-generated method stub
+		System.out.println("합 : "+num1+num2);
 		
 	}
 
 	@Override
 	public void sub(int num1, int num2) {
-		// TODO Auto-generated method stub
+		System.out.println("차 : "+Math.abs(num1-num2));
 		
 	}
 
 	@Override
 	public void mul(int num1, int num2) {
-		// TODO Auto-generated method stub
+		System.out.println("곱 : "+num1*num2);
 		
 	}
 
 	@Override
 	public void div(int num1, int num2) {
-		// TODO Auto-generated method stub
+		System.out.printf("나누기 : %.8f", (float)num1/num2);
+		System.out.println();
 		
 	}
 
 	@Override
 	public void rem(int num1, int num2) {
-		// TODO Auto-generated method stub
+		System.out.println("나머지 : "+num1%num2);
 		
 	}
 
 	@Override
 	public void timesTable(int num) {
-		// TODO Auto-generated method stub
+		for(int x=1;x<10;x++) {
+			System.out.println(x+"Xnum="+x*num);
+		}
+		System.out.println("구구단 끝");
 		
 	}
 
