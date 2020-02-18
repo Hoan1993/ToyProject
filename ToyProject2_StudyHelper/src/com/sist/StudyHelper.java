@@ -14,6 +14,7 @@ public class StudyHelper implements ToyProject2_StudyHelper {
 	public void commandProcessor() {
 		System.out.println("::::수학도우미 시작::::");
 		System.out.println("도움말 : help");
+		System.out.println("명령어를 입력하세요.");
 		Scanner sc;
 		while (true) {
 			sc = new Scanner(System.in);
@@ -45,33 +46,40 @@ public class StudyHelper implements ToyProject2_StudyHelper {
 
 		} else {
 			System.out.println("정수 두 개를 입력하세요 : ");
-			int num1 = sc.nextInt();
-			int num2 = sc.nextInt();
-			switch (result) {
-			case "max":
-				max(num1, num2);
-				break;
-			case "min":
-				min(num1, num2);
-				break;
-			case "sum":
-				sum(num1, num2);
-				break;
-			case "sub":
-				sub(num1, num2);
-				break;
-			case "mul":
-				mul(num1, num2);
-				break;
-			case "div":
-				div(num1, num2);
-				break;
-			case "rem":
-				rem(num1, num2);
-				break;
-			default:
-				break;
+			
+			try {
+				int num1 = sc.nextInt();
+				int num2 = sc.nextInt();
+				
+				switch (result) {
+				case "max":
+					max(num1, num2);
+					break;
+				case "min":
+					min(num1, num2);
+					break;
+				case "sum":
+					sum(num1, num2);
+					break;
+				case "sub":
+					sub(num1, num2);
+					break;
+				case "mul":
+					mul(num1, num2);
+					break;
+				case "div":
+					div(num1, num2);
+					break;
+				case "rem":
+					rem(num1, num2);
+					break;
+				default:
+					break;
+				}
+			} catch (Exception e) {
+				System.out.println("정수를 입력하시라고요.");
 			}
+
 		}
 
 	}
