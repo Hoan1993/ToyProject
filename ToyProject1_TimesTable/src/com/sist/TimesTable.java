@@ -3,9 +3,10 @@ package com.sist;
 import java.util.Scanner;
 
 public class TimesTable {
-
 	
 	public void commandProcessor() {
+		//테스트
+		
 		System.out.println("Hello");
 		System.out.println("Hi");
 		
