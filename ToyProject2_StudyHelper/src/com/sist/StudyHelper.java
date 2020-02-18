@@ -86,7 +86,19 @@ public class StudyHelper implements ToyProject2_StudyHelper {
 	@Override
 	public void help() {
 		// TODO Auto-generated method stub
-		
+
+		System.out.println("::::::::::::도우미 명령어::::::::::::::");
+		System.out.println("수학도우미 입니다.");
+		System.out.println("명령어 입력 후 숫자를 입력해 주세요.");
+		System.out.println("max : 두 수 중 큰 값을 구해줍니다.");
+		System.out.println("min : 두 수 중 작은 값을 구해줍니다.");
+		System.out.println("sum : 두 수의 덧셈을 해 줍니다.");
+		System.out.println("sub : 두 수의 뺄셈을 해 줍니다.");
+		System.out.println("mul : 두 수의 곱셈을 구해줍니다.");
+		System.out.println("div : 두 수의 나눗셈을 해 줍니다.");
+		System.out.println("rem : 두 수의 나머지를 구해줍니다.");
+		System.out.println("tt : 특정 수의 구구단을 출력해줍니다.");
+		System.out.println("    사용례(tt 4)");
 	}
 
 	@Override
@@ -103,12 +115,7 @@ public class StudyHelper implements ToyProject2_StudyHelper {
 
 	@Override
 	public void sum(int num1, int num2) {
-<<<<<<< HEAD
 		System.out.println("합 : "+num1+num2);
-=======
-		
-		// TODO Auto-generated method stub
->>>>>>> branch 'master' of https://github.com/Hoan1993/ToyProject.git
 		
 	}
 
