@@ -20,8 +20,8 @@ public class StudyHelper implements ToyProject2_StudyHelper {
 			sc = new Scanner(System.in);
 			System.out.print("$ ");
 			String result = sc.next();
-			if (result == null) {
-
+			if (result.length() == 0) {
+				System.out.println("엔터만 누르지 마세요.");
 			} else if (result.equalsIgnoreCase("exit")) {
 				System.out.println(":::: 수학 도우미가 종료되었습니다 ::::");
 				break;
