@@ -19,7 +19,6 @@ public class StudyHelper implements ToyProject2_StudyHelper {
 		while (true) {
 			sc = new Scanner(System.in);
 			System.out.print("$ ");
-			Integer.parseInt(sc.next());
 			String result = sc.next();
 			if (result.length() == 0) {
 			} else if (result.equalsIgnoreCase("exit")) {
