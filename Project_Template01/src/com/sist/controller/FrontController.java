@@ -1,7 +1,11 @@
 package com.sist.controller;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.nio.file.FileSystem;
+import java.nio.file.FileSystems;
+import java.nio.file.Paths;
 import java.util.Properties;
 import java.util.StringTokenizer;
 
@@ -57,18 +61,10 @@ public class FrontController extends HttpServlet{
 				 * 파일을 가져온다. 인자로 들어온 Properties 파일을 일게 된다. 
 				 * 읽어들일 때 사용하는 메서드는 load() 메서드를 이용한다.
 				 */
-				
-				
+					
 				Properties prop = new Properties();
-<<<<<<< HEAD
-<<<<<<< HEAD
-				FileInputStream fis = new FileInputStream("C:\\Users\\sist73\\git\\ToyProjectA\\Project_Template01\\src\\com\\sist\\controller\\mapping.properties");
-=======
-				FileInputStream fis = new FileInputStream("C:\\Users\\sist\\git\\ToyProjectA\\Project_Template01\\src\\com\\sist\\controller\\mapping.properties");
->>>>>>> branch 'master' of https://github.com/Hoan1993/ToyProject.git
-=======
-				FileInputStream fis = new FileInputStream("C:\\Users\\SIST78\\git\\ToyProjectB\\Project_Template01\\src\\com\\sist\\controller\\mapping.properties");
->>>>>>> branch 'master' of https://github.com/Hoan1993/ToyProject.git
+				FileInputStream fis = new FileInputStream("C:\\Users\\"+System.getProperty("user.name")+
+						"\\git\\ToyProjectA\\Project_Template01\\src\\com\\sist\\controller\\mapping.properties");
 
 				prop.load(fis);
 				
