@@ -13,6 +13,7 @@
 	src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <body>
+	<h1>정치페이지</h1>
 	<div class="container">
 	<%@ include file="../include/header.jsp" %>    
 	<div id="center-top">

@@ -63,8 +63,22 @@ public class FrontController extends HttpServlet{
 				 */
 					
 				Properties prop = new Properties();
+<<<<<<< HEAD
 				FileInputStream fis = new FileInputStream("C:\\Users\\"+System.getProperty("user.name")+
 						"\\git\\ToyProjectA\\Project_Template01\\src\\com\\sist\\controller\\mapping.properties");
+=======
+
+				//FileInputStream fis = new FileInputStream("C:\\Users\\sist\\git\\ToyProjectA\\Project_Template01\\src\\com\\sist\\controller\\mapping.properties");
+
+
+				/*FileInputStream fis = new FileInputStream("C:\\Users\\sist\\git\\ToyProjectA\\Project_Template01\\src\\com\\sist\\controller\\mapping.properties");*/
+
+				//FileInputStream fis = new FileInputStream("C:\\Users\\sist\\git\\ToyProjectA\\Project_Template01\\src\\com\\sist\\controller\\mapping.properties");
+
+				FileInputStream fis = new FileInputStream("C:\\Users\\"+System.getProperty("user.name")+
+		                  "\\git\\ToyProjectA\\Project_Template01\\src\\com\\sist\\controller\\mapping.properties");
+				
+>>>>>>> branch 'master' of https://github.com/Hoan1993/ToyProject.git
 
 				prop.load(fis);
 				

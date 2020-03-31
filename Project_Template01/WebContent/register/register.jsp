@@ -18,7 +18,7 @@
 <body>
 	<!-- main -->
 	<div class="main-w3layouts wrapper">
-		<h1>Creative SignUp Form</h1>
+		<h1>회원가입폼</h1>
 		<div class="main-agileinfo">
 			<div class="agileits-top">
 			
@@ -30,7 +30,7 @@
 					<div class="wthree-text">
 						<label class="anim">
 							<input type="checkbox" class="checkbox" required="">
-							<span>I Agree To The Terms & Conditions</span>
+							<span>열심히 참여해 주실거죠?</span>
 						</label>
 						<div class="clear"> </div>
 					</div>
