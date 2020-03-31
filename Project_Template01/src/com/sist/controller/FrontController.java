@@ -73,7 +73,7 @@ public class FrontController extends HttpServlet{
 				//FileInputStream fis = new FileInputStream("C:\\Users\\sist\\git\\ToyProjectA\\Project_Template01\\src\\com\\sist\\controller\\mapping.properties");
 
 				FileInputStream fis = new FileInputStream("C:\\Users\\"+System.getProperty("user.name")+
-		                  "\\git\\ToyProjectB\\Project_Template01\\src\\com\\sist\\controller\\mapping.properties");
+		                  "\\git\\ToyProjectA\\Project_Template01\\src\\com\\sist\\controller\\mapping.properties");
 				
 
 
