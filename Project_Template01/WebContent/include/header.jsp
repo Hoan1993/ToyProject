@@ -38,7 +38,7 @@
 				</div>
 				<div class="collapse navbar-collapse" id="nav_menu" align="left">
 					<ul class="nav navbar-nav">
-						<li><a href="#">정치</a></li>
+						<li><a href="board_politics.do">정치</a></li>
 						<li><a href="#">경제</a></li>
 						<li><a href="#">사회</a></li>
 						<li><a href="#">생활/문화</a></li>
