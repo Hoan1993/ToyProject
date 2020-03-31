@@ -2,6 +2,7 @@ package com.sist.model;
 
 import java.sql.*;
 import javax.naming.InitialContext;
+import javax.sql.DataSource;
 
 public class ArticleDAO {
 	Connection conn = null;
