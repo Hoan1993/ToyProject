@@ -14,7 +14,7 @@
 </head>
 <body>
 	<div class="container">
-	<%@ include file="../include/header.jsp" %>
+	<%@ include file="../include/header.jsp" %>    
 	<div id="center-top">
 		<hr width="500" color="gray">
 		
