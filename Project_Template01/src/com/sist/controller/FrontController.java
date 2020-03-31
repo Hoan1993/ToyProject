@@ -63,28 +63,14 @@ public class FrontController extends HttpServlet{
 				 */
 					
 				Properties prop = new Properties();
-<<<<<<< HEAD
 				FileInputStream fis = new FileInputStream("C:\\Users\\"+System.getProperty("user.name")+
 						"\\git\\ToyProjectA\\Project_Template01\\src\\com\\sist\\controller\\mapping.properties");
-=======
-
-				//FileInputStream fis = new FileInputStream("C:\\Users\\sist\\git\\ToyProjectA\\Project_Template01\\src\\com\\sist\\controller\\mapping.properties");
-
-
-				/*FileInputStream fis = new FileInputStream("C:\\Users\\sist\\git\\ToyProjectA\\Project_Template01\\src\\com\\sist\\controller\\mapping.properties");*/
-
-				//FileInputStream fis = new FileInputStream("C:\\Users\\sist\\git\\ToyProjectA\\Project_Template01\\src\\com\\sist\\controller\\mapping.properties");
-
-				FileInputStream fis = new FileInputStream("C:\\Users\\"+System.getProperty("user.name")+
-		                  "\\git\\ToyProjectA\\Project_Template01\\src\\com\\sist\\controller\\mapping.properties");
-				
->>>>>>> branch 'master' of https://github.com/Hoan1993/ToyProject.git
 
 				prop.load(fis);
 				
 				String value = prop.getProperty(command);
-				
 				System.out.println(value);
+				System.out.println("value ==> "+value.substring(0, 7));
 				
 				if(value.substring(0, 7).equals("execute")) {
 					StringTokenizer st = new StringTokenizer(value, "|");
