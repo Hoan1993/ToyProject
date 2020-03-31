@@ -7,9 +7,6 @@ import java.sql.SQLException;
 
 import util.DBManager;
 
-
-
-
 public class MemberDAO {
 	Connection conn = null;
 	PreparedStatement pstmt = null;

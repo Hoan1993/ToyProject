@@ -34,6 +34,7 @@ th{
 </head>
 <body>
 	<div class="container">
+<<<<<<< HEAD
 		<%@ include file="../include/header.jsp"%>
 		<%@ include file="../include/sidebar.jsp"%>
 
@@ -196,13 +197,27 @@ th{
 			
 		</table>
 
+=======
+	<%@ include file="../include/header.jsp" %>    
+	<div id="center-top">
+		<!-- <hr width="500" color="gray"> -->
+>>>>>>> branch 'master' of https://github.com/Hoan1993/ToyProject.git
 		
+<<<<<<< HEAD
 
 
 
 
 
 		<%@ include file="../include/footer.jsp"%>
+=======
 	</div>
+	<%@ include file="../include/sidebar.jsp" %>
+
+	
+
+>>>>>>> branch 'master' of https://github.com/Hoan1993/ToyProject.git
+	</div>
+	<%@ include file="../include/footer.jsp" %>
 </body>
 </html>
