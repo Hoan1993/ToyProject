@@ -57,10 +57,10 @@ $('.message a').click(function(){
 			<form  class="login-form" name="frm" action="<%=request.getContextPath() %>/board_loginOk.do" method="post">
 				<input type="text" placeholder="username" name="id"/> <input type="password"
 					placeholder="password" name="pwd"/>
-				<button onclick="location.href='<%=request.getContextPath() %>/board_loginOk.do'">login</button>
+				<button onclick="location.href='<%=request.getContextPath() %>/board_loginOk.do'">로그인</button>
 				<p class="message">
 					Not registered? <!-- <a href="#">Create an account</a> -->
-					<a href="<%=request.getContextPath() %>/board_joinForm.do">Create an accout</a>
+					<a href="<%=request.getContextPath() %>/board_joinForm.do">회원가입</a>
 				</p>
 			</form>
 		</div>

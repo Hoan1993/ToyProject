@@ -23,10 +23,10 @@
 			<div class="agileits-top">
 			
 				<form action="board_joinOk.do" method="post">
-					<input class="text" type="text" name="Username" placeholder="Username" required="">
-					<input class="text email" type="email" name="email" placeholder="Email" required="">
-					<input class="text" type="password" name="password" placeholder="Password" required="">
-					<input class="text w3lpass" type="password" name="password" placeholder="Confirm Password" required="">
+					<input class="text" type="text" name="Username" placeholder="이름" required="">
+					<input class="text email" type="email" name="email" placeholder="이메일" required="">
+					<input class="text" type="password" name="password" placeholder="비밀번호" required="">
+					<input class="text w3lpass" type="password" name="password" placeholder="비밀번호 확인" required="">
 					<div class="wthree-text">
 						<label class="anim">
 							<input type="checkbox" class="checkbox" required="">
@@ -34,15 +34,16 @@
 						</label>
 						<div class="clear"> </div>
 					</div>
-					<input type="submit" value="SIGNUP">
+					<input type="submit" value="회원가입">
 				</form>
-				<p>Don't have an Account? <a href="#"> Login Now!</a></p>
+				<p>계정이 이미 있나요?  &nbsp; &nbsp; <a href="board_loginForm.do"> 로그인하기</a></p>
 			</div>
 		</div>
 		<!-- copyright -->
 		<div class="colorlibcopy-agile">
-			<p>© 2018 Colorlib Signup Form. All rights reserved | Design by <a href="https://colorlib.com/" target="_blank">Colorlib</a></p>
+			<p>© 2018 Colorlib Signup Form. All rights reserved | Design by <a href="#" target="_blank">Colorlib</a></p>
 		</div>
+		<!-- https://colorlib.com/ -->
 		<!-- //copyright -->
 		<ul class="colorlib-bubbles">
 			<li></li>
