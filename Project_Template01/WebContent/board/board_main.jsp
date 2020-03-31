@@ -15,18 +15,25 @@
 <body>
 	<div class="container">
 	<%@ include file="../include/header.jsp" %>
+	
 	<div id="center-top">
 		<hr width="500" color="gray">
 		
 	</div>
+	
 	<%@ include file="../include/sidebar.jsp" %>
 	
-<<<<<<< HEAD
+
 	
 	
-=======
+
 	<%@ include file="../include/footer.jsp" %>
->>>>>>> branch 'master' of https://github.com/Hoan1993/ToyProject.git
+	
+	
+	
+	
+	
+	
 	</div>
 </body>
 </html>
