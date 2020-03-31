@@ -34,10 +34,8 @@ th{
 </head>
 <body>
 	<div class="container">
-		<%@ include file="../include/header.jsp"%>
-		<%@ include file="../include/sidebar.jsp"%>
-
-
+		<div><%@ include file="../include/header.jsp"%></div>
+		<div style="float: right;"><%@ include file="../include/sidebar.jsp"%></div>
 		<div align="left" id="center-top">
 			<h3>동영상 뉴스</h3>
 			<ul>
@@ -51,7 +49,7 @@ th{
 						width="200" height="150"></a> <br /> 타이틀 받아와서 넣기</li>
 			</ul>
 		</div>
-
+		<div>
 		<hr width="80%" color="gray">
 		<table width="600">
 			<tr>
@@ -193,11 +191,9 @@ th{
 			</ul>
 			</td>
 			</tr>
-			
 		</table>
-
-
+		</div>
+		<div><%@ include file="../include/footer.jsp" %></div>		
 	</div>
-	<%@ include file="../include/footer.jsp" %>
 </body>
 </html>

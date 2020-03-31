@@ -13,7 +13,7 @@
 
 </head>
 <body>
-	<div class="col-sm-2" align="left">
+	<div class="col-sm-2" align="left" style="width: auto;">
 			<div class="panel panel-default">
 				<div class="panel-heading">가장 많이 본 뉴스</div>
 				<div class="panel-body">

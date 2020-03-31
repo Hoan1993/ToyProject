@@ -37,7 +37,7 @@ public class BoardLoginOkAction implements Action{
 			session.setAttribute("loginUser", mVo);
 			request.setAttribute("message", "로그인 성공");
 			request.setAttribute("mVo", mVo);
-			url = "board_Main.do";
+			url = "board_main.do";
 		} else {
 			request.setAttribute("message", "로그인에 실패했습니다.");
 		}

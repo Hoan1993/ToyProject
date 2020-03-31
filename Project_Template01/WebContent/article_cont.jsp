@@ -40,6 +40,9 @@
 </head>
 <body>
 
+	<div>
+		<%@ include file="../include/header.jsp"%>
+	</div>
 	
 	<div class="container">
 		<c:set var="article" value="${Cont }" />
@@ -65,7 +68,10 @@
 
 		</div>
 		<!-- /.blog-main -->
-
+		
+		<div>
+			<%@ include file="../include/sidebar.jsp"%>
+		</div>
 	</div>
 
 
