@@ -15,6 +15,13 @@
 <link rel="stylesheet" href="./css/style.css">
 <link rel="stylesheet" href="css/bootstrap-3.4.1.css">
 <style type="text/css">
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
 .blog-post {
   margin-bottom: 60px;
 }
@@ -34,7 +41,7 @@
 <body>
 
 	
-	<div class="row">
+	<div class="container">
 		<c:set var="article" value="${Cont }" />
 		<div class="col-sm-8 blog-main">
 			<div class="blog-post">
