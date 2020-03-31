@@ -5,6 +5,7 @@ public class ArticleVO {
 	private int article_no;
 	private String article_writer;
 	private String article_name;
+	private String article_media;
 	private String article_gen1;
 	private String article_gen2;
 	private String article_title;
@@ -92,6 +93,12 @@ public class ArticleVO {
 	}
 	public void setArticle_date(String article_date) {
 		this.article_date = article_date;
+	}
+	public String getArticle_media() {
+		return article_media;
+	}
+	public void setArticle_media(String article_media) {
+		this.article_media = article_media;
 	}
 	
 }
