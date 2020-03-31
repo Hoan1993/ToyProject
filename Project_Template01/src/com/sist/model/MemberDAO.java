@@ -119,7 +119,7 @@ public class MemberDAO {
 
 	public int insertMember(MemberVO vo) {
 		sql = "insert into member00 values(?,?,?,1,'')";
-		
+		   
 		conn = DBManager.openConn();
 		
 		int result = 0;
