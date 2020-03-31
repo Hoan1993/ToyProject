@@ -20,13 +20,9 @@
 		
 	</div>
 	<%@ include file="../include/sidebar.jsp" %>
-	
-<<<<<<< HEAD
-	
-	
-=======
+
 	<%@ include file="../include/footer.jsp" %>
->>>>>>> branch 'master' of https://github.com/Hoan1993/ToyProject.git
+
 	</div>
 </body>
 </html>
