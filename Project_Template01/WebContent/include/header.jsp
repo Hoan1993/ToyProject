@@ -18,7 +18,7 @@
 	<header>
 		<div id="login">
 			<a href="./index.html">홈</a>
-			<!-- 초기페이지 -->
+			<!-- 초기페이지 --><!-- 로그인 했을경우 000님으로 바꾸기 -->
 			<a href="<%=request.getContextPath()%>/board_loginForm.do">로그인</a>
 		</div>
 	</header>
