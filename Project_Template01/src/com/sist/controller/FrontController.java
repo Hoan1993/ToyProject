@@ -1,11 +1,7 @@
 package com.sist.controller;
 
-import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
-import java.nio.file.FileSystem;
-import java.nio.file.FileSystems;
-import java.nio.file.Paths;
 import java.util.Properties;
 import java.util.StringTokenizer;
 
@@ -18,8 +14,6 @@ import javax.servlet.http.HttpServletResponse;
 import com.sist.action.Action;
 import com.sist.action.ActionForward;
 
-
-
 public class FrontController extends HttpServlet{
 	
 	/**
@@ -29,9 +23,7 @@ public class FrontController extends HttpServlet{
 
 	protected void service(HttpServletRequest request, HttpServletResponse response) 
 		throws IOException, ServletException {
-		
-		
-		
+
 				// 한글 인코딩 처리
 				request.setCharacterEncoding("UTF-8");
 				response.setContentType("text/html; charset=UTF-8");
@@ -120,10 +112,5 @@ public class FrontController extends HttpServlet{
 						rd.forward(request, response);
 					}
 				}
-
 	}
-	
-	
-	
-	
 }
