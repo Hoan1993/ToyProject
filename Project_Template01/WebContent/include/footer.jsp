@@ -25,7 +25,7 @@ footer{
 		<!-- <p></p>
 		<address></address> -->
 		<p></p>
-		<p>사이트 관리자 : 홍길동 / 저술가, 번역가 E-Maill : hong@naver.com Copyright &copy All right reserved</p>
+		<p>사이트 관리자 : 홍길동 / 저술가, 번역가 E-Mail : hong@naver.com Copyright &copy All right reserved</p>
 		<p></p>
 	</footer>
 </body>
