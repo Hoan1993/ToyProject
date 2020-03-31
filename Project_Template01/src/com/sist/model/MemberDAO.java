@@ -9,9 +9,6 @@ import java.sql.Statement;
 import javax.naming.InitialContext;
 import javax.sql.DataSource;
 
-
-
-
 public class MemberDAO {
 	Connection conn = null;
 	PreparedStatement pstmt = null;
