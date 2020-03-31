@@ -16,7 +16,8 @@
 	<div class="container">
 	<%@ include file="../include/header.jsp" %>
 	<div id="center-top">
-		<hr width="500" color="orange">
+		<hr width="500" color="gray">
+		
 	</div>
 	<%@ include file="../include/sidebar.jsp" %>
 	
