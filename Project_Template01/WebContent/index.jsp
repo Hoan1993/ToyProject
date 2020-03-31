@@ -14,6 +14,11 @@
 		<br /><br />
 		<a href="<%=request.getContextPath() %>/board_loginForm.do">[로그인]</a>
 	
+	
+	
+	
+	
+	
 	</div>	
 </body>
 </html>
