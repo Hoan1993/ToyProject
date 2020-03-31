@@ -20,9 +20,9 @@
 					<font>1. </font><a href="#">코로나</a><br />
 					<font>2. </font><a href="#">우한폐렴</a><br /> 
 					<font>3. </font><a href="#">비밀게시판</a><br /> 
-					<font>4. </font><a href="#">가입인사</a><br />
-					<font>5. </font><a href="#">가입인사</a><br />
-					<font>6. </font><a href="#">가입인사</a><br />
+					<font>4. </font><a href="#">화이팅</a><br />
+					<font>5. </font><a href="#">우하하하</a><br />
+					<font>6. </font><a href="#">뭘까용~?</a><br />
 					<font>7. </font><a href="#">가입인사</a><br />
 					<font>8. </font><a href="#">기사</a><br />
 					<font>9. </font><a href="#">기사</a><br />

@@ -45,7 +45,7 @@
 						<li><a href="#">세계</a></li>
 						<li><a href="#">IT/과학</a></li>
 						<li><a href="#">스포츠</a></li>
-						<li><a href="board_write.do">기사쓰기</a></li>
+						<li><a href="board_write.do">기사쓰기 </a></li>
 					</ul>
 				</div>
 			</div>
@@ -54,35 +54,4 @@
 
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
