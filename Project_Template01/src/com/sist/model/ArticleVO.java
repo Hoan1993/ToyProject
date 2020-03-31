@@ -16,6 +16,7 @@ public class ArticleVO {
 	private String article_file4;
 	private int article_hit;
 	private String article_date;
+	
 	public int getArticle_no() {
 		return article_no;
 	}

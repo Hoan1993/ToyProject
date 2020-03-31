@@ -2,6 +2,7 @@ package com.sist.model;
 
 import java.sql.*;
 import javax.naming.InitialContext;
+import util.DBManager;
 
 public class ArticleDAO {
 	Connection conn = null;
@@ -18,46 +19,57 @@ public class ArticleDAO {
 	public static ArticleDAO getInstance() {
 		return instance;
 	}
-
-	public Connection openConn() {
-		
-		try {
-
-			// 1. JNDI 서버 객체 생성
-			InitialContext ic = new InitialContext();
-			// 2. lookup() 메서드를 이용하여 매칭되는 커넥션을 찾는다.
-			DataSource ds = (DataSource) ic.lookup("java:comp/env/jdbc/myoracle");
-			// 3. DataSource 객체를 이용하여 커넥션 객체를 하나 가져온다.
-			conn = ds.getConnection();
-		} catch (Exception e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		
-		return conn;
-		
-	}
-
-	public void close(Connection conn, Statement stmt, ResultSet rs) {
-		try {
-			rs.close();
-			stmt.close();
-			conn.close();
-		} catch (SQLException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		
-	}
 	
-	public  void close(Connection conn, Statement stmt) {
+	public ArticleVO articleCont(int article_no) {
+			ArticleVO vo = new ArticleVO();
+		
 		try {
-			stmt.close();
-			conn.close();
+			conn = DBManager.openConn();
+			sql = "select * from article0 where article_no=?";
+			pstmt = conn.prepareStatement(sql);
+			pstmt.setInt(1, article_no);
+			rs = pstmt.executeQuery();
+			
+			if(rs.next()) {	
+				vo.setArticle_writer(rs.getString("article_writer"));
+				vo.setArticle_name(rs.getString("article_name"));
+				vo.setArticle_media(rs.getString("article_media"));
+				vo.setArticle_gen1(rs.getString("article_gen1"));
+				vo.setArticle_gen2(rs.getString("article_gen2"));
+				vo.setArticle_title(rs.getString("article_title"));
+				vo.setArticle_cont(rs.getString("article_cont"));
+				vo.setArticle_file1(rs.getString("article_file1"));
+				vo.setArticle_file1(rs.getString("article_file1"));
+				vo.setArticle_file1(rs.getString("article_file1"));
+				vo.setArticle_file1(rs.getString("article_file1"));
+				vo.setArticle_date(rs.getString("article_date"));
+			}
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
+		} finally {
+			DBManager.close(conn, pstmt, rs);
 		}
+
+		return vo;
 	}
 
+	public int articleHit(int article_no) {
+		int result = 0;
+			
+		try {
+			conn = DBManager.openConn(); // 조회수 증가
+			sql = "update article0 set article_hit=+1 where article_no=?";
+			pstmt = conn.prepareStatement(sql);
+			pstmt.setInt(1, article_no);
+			result = pstmt.executeUpdate();
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} finally {
+			DBManager.close(conn, pstmt);
+		}
+		
+		return result;
+	}
 }
