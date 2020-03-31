@@ -7,9 +7,6 @@ import java.sql.SQLException;
 
 import util.DBManager;
 
-
-
-
 public class MemberDAO {
 	Connection conn = null;
 	PreparedStatement pstmt = null;
@@ -122,7 +119,7 @@ public class MemberDAO {
 
 	public int insertMember(MemberVO vo) {
 		sql = "insert into member00 values(?,?,?,1,'')";
-		
+		   
 		conn = DBManager.openConn();
 		
 		int result = 0;

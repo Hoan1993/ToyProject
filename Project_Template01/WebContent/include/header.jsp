@@ -17,7 +17,7 @@
 	<div class="container">
 	<header>
 		<div id="login">
-			<a href="./index.html">홈</a>
+			<a href="<%=request.getContextPath()%>/board_main.do">홈</a>
 			<!-- 초기페이지 -->
 			<a href="<%=request.getContextPath()%>/board_loginForm.do">로그인</a>
 		</div>
@@ -38,13 +38,14 @@
 				</div>
 				<div class="collapse navbar-collapse" id="nav_menu" align="left">
 					<ul class="nav navbar-nav">
-						<li><a href="#">정치</a></li>
+						<li><a href="board_politics.do">정치</a></li>
 						<li><a href="#">경제</a></li>
 						<li><a href="#">사회</a></li>
 						<li><a href="#">생활/문화</a></li>
 						<li><a href="#">세계</a></li>
 						<li><a href="#">IT/과학</a></li>
 						<li><a href="#">스포츠</a></li>
+						<li><a href="board_write.do">기사쓰기 </a></li>
 					</ul>
 				</div>
 			</div>
@@ -53,35 +54,4 @@
 
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

@@ -14,8 +14,6 @@ import javax.servlet.http.HttpServletResponse;
 import com.sist.action.Action;
 import com.sist.action.ActionForward;
 
-
-
 public class FrontController extends HttpServlet{
 	
 	/**
@@ -25,9 +23,7 @@ public class FrontController extends HttpServlet{
 
 	protected void service(HttpServletRequest request, HttpServletResponse response) 
 		throws IOException, ServletException {
-		
-		
-		
+
 				// 한글 인코딩 처리
 				request.setCharacterEncoding("UTF-8");
 				response.setContentType("text/html; charset=UTF-8");
@@ -57,21 +53,25 @@ public class FrontController extends HttpServlet{
 				 * 파일을 가져온다. 인자로 들어온 Properties 파일을 일게 된다. 
 				 * 읽어들일 때 사용하는 메서드는 load() 메서드를 이용한다.
 				 */
-				
-				
+					
 				Properties prop = new Properties();
+<<<<<<< HEAD
 
 				FileInputStream fis = new FileInputStream("C:\\Users\\"+System.getProperty("user.name")+
 		                  "\\git\\ToyProjectA\\Project_Template01\\src\\com\\sist\\controller\\mapping.properties");
 
 				
 
+=======
+				FileInputStream fis = new FileInputStream("C:\\Users\\"+System.getProperty("user.name")+
+						"\\git\\ToyProjectA\\Project_Template01\\src\\com\\sist\\controller\\mapping.properties");
+>>>>>>> branch 'master' of https://github.com/Hoan1993/ToyProject.git
 
 				prop.load(fis);
 				
 				String value = prop.getProperty(command);
-				
 				System.out.println(value);
+				System.out.println("value ==> "+value.substring(0, 7));
 				
 				if(value.substring(0, 7).equals("execute")) {
 					StringTokenizer st = new StringTokenizer(value, "|");
@@ -121,10 +121,5 @@ public class FrontController extends HttpServlet{
 						rd.forward(request, response);
 					}
 				}
-
 	}
-	
-	
-	
-	
 }

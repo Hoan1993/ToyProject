@@ -55,11 +55,11 @@ $('.message a').click(function(){
 				</p>
 			</form>
 			<form  class="login-form" name="frm" action="<%=request.getContextPath() %>/board_loginOk.do" method="post">
-				<input type="text" placeholder="username" name="id"/> <input type="password"
-					placeholder="password" name="pwd"/>
+				<input type="text" placeholder="이메일" name="id"/> <input type="password"
+					placeholder="비밀번호" name="pwd"/>
 				<button onclick="location.href='<%=request.getContextPath() %>/board_loginOk.do'">로그인</button>
 				<p class="message">
-					Not registered? <!-- <a href="#">Create an account</a> -->
+					아직 가입 안 하셨나요? <!-- <a href="#">Create an account</a> -->
 					<a href="<%=request.getContextPath() %>/board_joinForm.do">회원가입</a>
 				</p>
 			</form>
