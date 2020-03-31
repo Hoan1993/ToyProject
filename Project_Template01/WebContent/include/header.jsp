@@ -19,8 +19,7 @@
 		<div id="login">
 			<a href="./index.html">홈</a>
 			<!-- 초기페이지 -->
-<%-- 			<a href="<%=request.getContextPath()%>/board_joinForm.do">회원가입</a>  --%>
-		<a href="<%=request.getContextPath()%>/board_loginForm.do">로그인</a>
+			<a href="<%=request.getContextPath()%>/board_loginForm.do">로그인</a>
 		</div>
 	</header>
 	

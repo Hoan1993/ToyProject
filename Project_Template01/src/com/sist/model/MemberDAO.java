@@ -4,10 +4,8 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.sql.Statement;
 
-import javax.naming.InitialContext;
-import javax.sql.DataSource;
+import util.DBManager;
 
 public class MemberDAO {
 	Connection conn = null;
@@ -25,7 +23,7 @@ public class MemberDAO {
 		return instance;
 	}
 
-	public Connection openConn() {
+	/*public Connection openConn() {
 		
 		try {
 
@@ -64,12 +62,12 @@ public class MemberDAO {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-	}
+	}*/
 
 	
 	public int loginProcess(String id, String pwd) {
 		sql = "select * from member00 where mem_email=? and mem_pwd=?";
-		conn = openConn();
+		conn = DBManager.openConn();
 		int result = 0;
 		try {
 			pstmt = conn.prepareStatement(sql);
@@ -84,7 +82,7 @@ public class MemberDAO {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} finally {
-			close(conn, pstmt, rs);
+			DBManager.close(conn, pstmt, rs);
 		}
 	
 		return result;
@@ -96,7 +94,7 @@ public class MemberDAO {
 		MemberVO mVo = null;
 		
 		try {
-			conn = openConn();
+			conn = DBManager.openConn();
 			pstmt = conn.prepareStatement(sql);
 			pstmt.setString(1, id);
 			rs = pstmt.executeQuery();
@@ -113,7 +111,7 @@ public class MemberDAO {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} finally {
-			close(conn, pstmt, rs);
+			DBManager.close(conn, pstmt, rs);
 		}
 		
 		return mVo;
@@ -122,7 +120,7 @@ public class MemberDAO {
 	public int insertMember(MemberVO vo) {
 		sql = "insert into member00 values(?,?,?,1,'')";
 		
-		conn = openConn();
+		conn = DBManager.openConn();
 		
 		int result = 0;
 		try {
@@ -136,7 +134,7 @@ public class MemberDAO {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} finally {
-			close(conn, pstmt);
+			DBManager.close(conn, pstmt);
 		}
 	
 		return result;
